@@ -1,0 +1,24 @@
+{
+  "name": "outlook-airtable-sync",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pulls event invites and deadlines from an Outlook inbox (via Microsoft Graph) and syncs them into an Airtable table.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "sync": "tsx src/sync.ts",
+    "login": "tsx src/login.ts"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.13.1",
+    "airtable": "^0.12.2",
+    "chrono-node": "^2.7.7",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
