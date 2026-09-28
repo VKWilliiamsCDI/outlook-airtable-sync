@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const CACHE_PATH = path.resolve(".cache/msal-token-cache.json");
-const SCOPES = ["Mail.Read", "offline_access", "User.Read"];
+const SCOPES = ["Mail.Read", "Calendars.Read", "offline_access", "User.Read"];
 
 function loadCache(): string | undefined {
   try {
